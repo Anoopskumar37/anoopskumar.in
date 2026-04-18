@@ -1,34 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anoop S Kumar</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 50px;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-            font-size: 18px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anoop Kumar | AI Developer</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #020617;
+    color: #38bdf8;
+    overflow-x: hidden;
+}
+
+/* Glow effect */
+.glow {
+    text-shadow: 0 0 10px #38bdf8, 0 0 20px #38bdf8;
+}
+
+/* Center */
+.container {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* Typing effect */
+.typing {
+    border-right: 2px solid #38bdf8;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(30), blink .7s infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    50% { border-color: transparent }
+}
+
+/* Cards */
+.card {
+    border: 1px solid #38bdf8;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px #38bdf8;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: #38bdf8;
+    color: black;
+}
+
+/* Background animation */
+body::before {
+    content: "";
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, #0ea5e9 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: move 20s linear infinite;
+    opacity: 0.05;
+}
+
+@keyframes move {
+    from { transform: translate(0,0); }
+    to { transform: translate(-50px, -50px); }
+}
+</style>
 </head>
+
 <body>
 
-    <h1>Hi, I'm Anoop Kumar 👋</h1>
-    <p>Welcome to my website.</p>
-    <p>This is my personal space on the internet.</p>
+<div class="container">
 
-    <h2>Contact</h2>
-    <p>Email: your@email.com</p>
+<h1 class="glow typing">Initializing System...</h1>
+
+<h2 class="glow">Hi, I'm Anoop S Kumar 👋</h2>
+
+<p>I’m a Web Developer building modern, interactive and AI-inspired web experiences.</p>
+
+<div class="card">
+<h3>About Me</h3>
+<p>I love technology, football, cricket and chess.  
+I focus on creating fast, modern and interactive websites.</p>
+</div>
+
+<div class="card">
+<h3>Skills</h3>
+<p>HTML • CSS • JavaScript • UI/UX • Responsive Design</p>
+</div>
+
+<div class="card">
+<h3>Projects</h3>
+<p>Coming soon... 🚀</p>
+</div>
+
+<div class="card">
+<h3>Contact</h3>
+<p>Email: anoopskumar37@gmail.com</p>
+</div>
+
+<a class="btn" href="#">View My Work</a>
+
+</div>
+
+<script>
+// Change title after load (AI effect)
+setTimeout(() => {
+    document.querySelector(".typing").innerText = "System Online";
+}, 4000);
+</script>
 
 </body>
 </html>
